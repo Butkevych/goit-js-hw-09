@@ -1,18 +1,77 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+ul,
+ol {
+  list-style: none;
+  margin-left: 0;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+img:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.sl-overlay {
+  background-color: rgba(22, 21, 21, 0.9);
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  align-items: center;
+}
+.feedback-form input,
+.feedback-form textarea {
+  margin-bottom: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 359px;
+  height: 39px;
+  padding-left: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.feedback-form input:hover {
+  border-color: #2e2f42;
+}
+.feedback-form input::placeholder {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.feedback-form input:active::placeholder {
+  color: #2e2f42;
+}
+button {
+  margin-top: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: 0;
+  width: 95px;
+  height: 40px;
+}
+button:hover {
+  background: #6c8cff;
+}
