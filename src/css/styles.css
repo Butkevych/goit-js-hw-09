@@ -3,6 +3,19 @@ ol {
   list-style: none;
   margin-left: 0;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.navigation {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  background-color: #6c8cff;
+}
 .gallery {
   display: flex;
   justify-content: center;
